@@ -28,3 +28,9 @@ code {
 .done {
   text-decoration: line-through;
 }
+
+.errors p {
+  color: red;
+  padding: 0px;
+  margin: 0px !important;
+}

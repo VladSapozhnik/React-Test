@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import TodoList from "./Todo/TodoList";
 import Context from "./context";
 import AddTodo from "./Todo/AddTodo";
+import FormValidate from "./Todo/FormValidate";
 
 function App() {
     let [todos, setTodos] = React.useState([
@@ -34,6 +35,7 @@ function App() {
 
     return (
         <Context.Provider value={{removeTodo}}>
+            <FormValidate/>
             <div className="wrapper">
                 <h1>React</h1>
                 <AddTodo onCreate={addTodo}/>
